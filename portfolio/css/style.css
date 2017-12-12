@@ -1,0 +1,497 @@
+nav ul{
+  text-align: center; /*bewirkt eine mittige textausrichtung */
+  margin: 0; /*entfernt standardisierte Aussenabstände */
+}
+
+nav li {
+  display: inline; /*sorg dafür, dass alle li-Elemente nebeneinander dargestellt werden */
+}
+
+nav a {
+  display: inline-block;
+
+  /* inline-block macht jedes der a-Elemente in der Navigation zu einem Block-Element, sodass sich
+  Aussenabstände und Höhe definieren lassen. display:block würde jeden Navigationspunkt die volle
+  Breite des Elternelements nutzen lassen, somit wären die Links wieder untereinander, aber mittig. */
+
+  color: #343434; /*Textfarbe innerhalb nav a, kann als HTML Farbcode #123456 oder als eines der Keywords angegeben werden. z.B. red, blue, yellow - Liste siehe Links weiter unten.*/
+  font-size: 14px; /*Schriftgrösse */
+  padding: 22px 15px; /*Innenabstand */
+  text-decoration: none; /*entfernt den Browser-Standard dass Links unterschrichen sind */
+  font-weight: 600; /*setzt die Schriftdicke auf semi-bold */
+}
+#about {
+  display: flex;
+}
+
+#portrait {
+  width: 50%;
+  position: relative;
+}
+#portrait_image{
+  background-size: cover; /* sorgt dafür dass das Bild immer das Elternelement komplett ausfüllt */
+  background-image: url("../img/hipster.jpg"); /* gibt die Quelle unseres Bildes an */
+  background-position: center; /* bestimmt wie das Bild beim verkleinern positioniert werden soll */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#beschreibung {
+  width: 50%;
+  background:#efefef;
+
+  /* Das background Element ist vielseitig einsetztbar. Hier definieren wir eine hellgraue
+  Hintergrundfarbe. Hier sind auch Begriffe wie "grey" oder "blue" etc. möglich, allerdings haben wir
+  mit den RGB Farbcode eine deutlich bessere Kontrolle über den effektiven Farbton */
+}
+#name {
+  min-height: 200px;
+  margin:5%;
+}
+#adresse {
+  color:#efefef;
+  background:#343434; /* hier definieren wir eine dunklere Hintergrundfarbe für die Adresse */
+  min-height: 200px;
+  padding:5%;
+}
+body { /*globale Schrifteinstellungen definieren */
+font-size: 14px;
+font-family: Arial, sans-serif; // Wenn Arial auf dem Computer verfügbar ist, wird diese gewählt, ansonsten eine serifenlose Schrift.
+line-height: 21px;
+color: #999999;
+}
+
+a { /* Links global stylen */
+color: #03cc85;
+text-decoration: none;
+}
+#beschreibung h1 { /*den h1 Tag innerhalb der ID beschreibung stylen */
+color: #343434;
+line-height: 100%;
+text-transform: uppercase;
+}
+
+#beschreibung span { /*das spanTag innerhalb der ID beschreibung stylen */
+color: #7a7a7a;
+font-size: 14px;
+text-transform: none;
+}
+main {
+  width: 100%;
+}
+
+#wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5%;
+}
+
+/* Skills Section */
+
+#wrapper h1 {
+  text-align: center;
+  line-height: 4em;
+}
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3;
+}
+.circle {
+  fill: none;
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%);
+  stroke-width: 3;
+  stroke-linecap: round;
+  -webkit-animation: in 1s;
+}
+
+svg:hover .circle{
+-webkit-animation: out 1s ;
+}
+
+@-webkit-keyframes in {
+  0%{
+  stroke-dasharray: 90 100;
+  }
+}
+
+@-webkit-keyframes out {
+  100% {
+  stroke-dasharray: 90 100;
+  }
+}
+
+/*
+.circle {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+
+}
+svg:hover .circle{
+
+    animation: progress 4s ease-out forwards;
+}
+
+*/
+/*
+@keyframes progress {
+  100% {
+
+    stroke-dasharray: 90 100;
+  }
+}
+  */
+
+.circular-chart.orange .circle {
+  stroke: #03CC85;
+}
+
+.circular-chart.green .circle {
+  stroke: #03CC85;
+}
+
+.circular-chart.blue .circle {
+  stroke: #03CC85;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+/*.skills-icons{
+  display: flex;
+  flex-flow: row wrap;
+}
+*/
+
+
+/*
+#icon1, #icon2, #icon3
+{
+  height: 300px;
+  width: 33.3333%;
+  text-align:center;
+  float: right;
+}
+
+circle {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dashoffset: 500;
+/*  stroke-linecap: butt;*/
+
+/*  -webkit-transition: all 8s ease-out;
+  -moz-transition: all 8s ease-out;
+  -ms-transition: all 8s ease-out;
+  -o-transition: all 8s ease-out;*/
+  /*transition: all 8s;*/
+/*
+}
+
+svg:hover circle {
+/*  fill: #ffffff; */
+/*  animation: progress 10s ease-out forwards; */
+/*
+animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+    }
+  }
+*/
+#cv, #jobs, #ausbildungen{
+  float: left;
+}
+.cv-eintrag {
+  width: 100%;
+  float: left;
+}
+.cv-eintrag img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.links p {
+  display: inline-block;
+  padding:15px;
+  border: 1px solid #efefef;
+}
+.links {
+  float: left;
+}
+.rechts {
+  width: 80%;
+  vertical-align: top;
+  float: right;
+}
+.cv-titel {
+  font-size: 1.2em;
+  line-height: 3em;
+  font-weight: bold;
+}
+.cv-beschreibung {
+  border: 1px solid #efefef;
+  padding: 0 15px 15px 15px;
+}
+/* Sektion Portfolio */
+#portfolio {
+  display: inline;
+}
+.portfolio-kacheln{
+  display: inline;
+    width: 33.3333%;
+}
+.portfolio-eintrag {
+  position: relative;
+  width: 33.3333%;
+}
+.portfolio-eintrag img{
+  width: 100%;
+  display: block;
+}
+.portfolio-eintrag .arbeit-titel {
+  background: rgba(3, 204, 133, 0.95);
+  height: 100%;
+  color: white;
+  padding: 45% 0;
+  position: absolute;
+  /* Positioniert das Element absolut über dem Elternelement, dieses Element lässt sich nun innerhalb der übergeordneten Box frei positionieren */
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  visibility:hidden;
+}
+.portfolio-eintrag:hover .arbeit-titel {
+  visibility:visible;
+}
+/*Detailseite */
+img.img-links {
+  width: 48%;
+  float:left;
+  margin: 0 4% 4% 0;
+}
+img.img-rechts {
+  width: 48%;
+  margin: 0 0 4% 0;
+}
+.back {
+  width: 100%;
+  text-align:center;
+  height: 4em;
+}
+nav a:hover {
+  color: #03cc85;
+  cursor: pointer;
+}
+/* Kontaktformular */
+#formular{
+  clear: both; /* floating aufheben*/
+  text-align: center;
+}
+
+.kontaktformular {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-control, textarea {
+  padding: 2%;
+  width: 92%;
+  margin: 2%;
+}
+
+.absenden {
+  padding: 2%;
+  width: 96%;
+  margin: 2%;
+  background: #03cc85;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.absenden:hover {
+  background:#029f68;
+}
+/* footer */
+footer {
+  background: #343434;
+  color: white;
+  padding: 2% 0;
+  margin:2% 0 0 0;
+  text-align: center;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* Mediaqueries bis 960px */
+@media only screen and (max-width: 960px){
+  #about{
+    display:flex;
+    flex-flow: row wrap;
+  }
+  #beschreibung {
+    width: 100%;
+  }
+  #portrait {
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+  }
+  #erstes-icon, #zweites-icon, #drittes-icon {
+    width: 100%;
+  }
+  section#cv {
+    padding: 0 5%;
+  }
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+  .rechts {
+    width: 100%;
+  }
+}
+
+/* Mediaqueries unter 480Pixel - z.B. Handy im Hochformat */
+@media only screen and (max-width: 480px){
+
+  nav li {
+    display: block;
+    line-height: 0.1em;
+  }
+  ul {
+    padding:0;
+  }
+  nav {
+    position: relative;
+    width:100%;
+  }
+  main {
+    padding:0;
+  }
+  .portfolio-eintrag {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+ }
+
+
+ #container {
+   position: relative;
+   margin: 100px auto;
+   width: 100px;
+   height: 100px;
+ }
+/*
+ #half {
+   width: 50%;
+   height: 100%;
+   right: 0px;
+   position: absolute;
+   overflow: hidden;
+   transform-origin: left center;
+   animation: cliprotate 5s steps(2) infinite;
+   -webkit-animation: cliprotate 5s steps(2) infinite;
+ }
+
+ .border {
+   box-sizing: border-box;
+   height: 100%;
+   right: 0px;
+   position: absolute;
+   border: solid 5px transparent;
+   border-top-color: black;
+   border-left-color: black;
+   border-radius: 50%;
+ }
+
+ #clipped {
+   width: 200%;
+   animation: rotate 2.5s linear infinite;
+   -webkit-animation: rotate 2.5s linear infinite;
+ }
+
+ #fixed {
+   width: 100%;
+   transform: rotate(135deg);
+   animation: showfixed 5s steps(1) infinite;
+   -webkit-animation: showfixed 5s linear infinite;
+ }
+
+ @-webkit-keyframes cliprotate {
+   0% {
+     transform: rotate(0deg);
+   }
+   75% {
+     transform: rotate(270deg);
+   }
+ }
+
+ @keyframes cliprotate {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(130deg);
+   }
+ }
+
+
+ @-webkit-keyframes rotate {
+   0% {
+     transform: rotate(-45deg);
+   }
+   75% {
+     transform: rotate(270eg);
+   }
+ }
+
+ @keyframes rotate {
+   0% {
+     transform: rotate(-45deg);
+   }
+   100% {
+     transform: rotate(135deg);
+   }
+ }
+
+ @-webkit-keyframes showfixed {
+   0% {
+     opacity: 0;
+   }
+   49.9% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+   }
+  100% {
+    opacity: 1;
+   }
+ }
+*/

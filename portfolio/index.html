@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--CSS und Scripts einbinden-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--Meta Angaben-->
+    <meta name="language" content="de">
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="Suchbegriffe">
+    <meta name="description" content="Beschreibung">
+    <meta title="Seitentitel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no height=device-height">
+    <!--Scripts einbinden-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,800,400' rel='stylesheet' type='text/css'>
+    <!-- Diese Zeile brauchen wir unbedingt damit unser responsive Design später funktioniert. Später mehr dazu. -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">Home</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#cv">Lebenslauf</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#formular">Kontakt</a></li>
+          <!-- Innerhalb der gleichen Seite ist die Angabe "index.html" eigentlich nicht notwenig. Es würde also auch nur "#about" funktionieren. Da wir aber diesen Code auch in anderen HTML Dateien verwenden wollen, geben wir hier immer erst an, in welcher Datei sich der Link befindet. -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Section About -->
+      <section id="about">
+      <div id="portrait">
+      <div id="portrait_image"></div>
+        </div>
+          <div id="beschreibung">
+            <div id="name">
+              <h1>Dario Zenhäusern</h1>
+                <span>Digital Designer</span>
+                <p class="bio">
+                „Wer immer tut, was er schon kann, bleibt immer das, was er schon ist.“
+                </p>
+            </div>
+          <div id="adresse">
+            <strong>Geburtstag :</strong> 22.02.1987<br>
+            <strong>Mobil :</strong> + 41 79 333 91 52<br>
+            <strong>Email :</strong> dario.zenhaeusern@bluewin.ch<br>
+            <strong>Website :</strong> <a href="http://www.interactivemediadesigner.com">Interactive Media Designer</a><br>
+            <strong>Adresse :</strong> Zenhäusernstrasse 34, 3935 Bürchen, Schweiz<br>
+            <a href="http://instagram.com"><img src="./img/social/instagram.svg" height="25px"></a>
+            <a href="http://facebook.com"><img src="./img/social/facebook.svg" height="25px"></a>
+            <a href="http://twitter.com"><img src="./img/social/twitter.svg" height="25px"></a>
+            <a href="http://dribbble.com"><img src="./img/social/dribbble.svg" height="25px"></a>
+            <a href="http://behance.com"><img src="./img/social/behance.svg" height="25px"></a>
+          </div>
+        </div>
+        </section> <!-- schliessendes section Tag der About Sektion -->
+          <div id="wrapper"> <!-- Mit dem wrapper können wir nun eine maximale Breite definieren -->
+          <!--  <section id="skills" Sektion Skills  -->
+              <h1>Meine Fähigkeiten</h1>
+            <!--  <div class="skills-icons">  -->
+
+              <div class="single-chart">
+                <svg viewbox="0 0 36 36" class="circular-chart orange">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="0, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">AI</text>
+                </svg>
+              </div>
+
+              <div class="single-chart">
+                <svg viewbox="0 0 36 36" class="circular-chart green">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="0, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">HTML</text>
+                </svg>
+              </div>
+
+              <div class="single-chart">
+                <svg viewbox="0 0 36 36" class="circular-chart blue">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="0, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">PS</text>
+                </svg>
+              </div>
+            </div>
+<!--
+              <div id="icon1">
+                  Adobe Photoshop
+                  <svg viewBox="0 0 141.7 141.7" enable-background="new 0 0 141.7 141.7" xml:space="preserve">
+                    <circle cx="70.9" cy="70.9" r="38" stroke="#03CC85" stroke-width="5" fill="#eeeeee" stroke-dasharray="10, 100"/>
+                    <circle fill="#FFFFFF" cx="70.9" cy="70.9" r="35.4"/>
+                    <g>
+                      <path fill="#03CC85" d="M70,67.1c0,2.2-0.7,3.8-2,4.9c-1.3,1.1-3.3,1.7-5.7,1.7h-1.8v7.1h-4.2v-20h6.4c2.4,0,4.3,0.5,5.5,1.6
+                    		C69.4,63.5,70,65,70,67.1z M60.4,70.3h1.4c1.3,0,2.3-0.3,2.9-0.8c0.6-0.5,1-1.3,1-2.2c0-1-0.3-1.7-0.8-2.2
+                    		c-0.5-0.5-1.4-0.7-2.5-0.7h-1.9V70.3z"/>
+                    	<path fill="#03CC85" d="M85.6,75.3c0,1.8-0.7,3.2-1.9,4.3s-3.1,1.6-5.4,1.6c-2.1,0-4-0.4-5.7-1.2V76c1.3,0.6,2.5,1,3.4,1.3
+                    		c0.9,0.2,1.8,0.4,2.6,0.4c0.9,0,1.6-0.2,2.1-0.5c0.5-0.4,0.7-0.9,0.7-1.6c0-0.4-0.1-0.7-0.3-1s-0.5-0.6-1-0.9
+                    		c-0.4-0.3-1.3-0.7-2.6-1.4c-1.2-0.6-2.1-1.1-2.7-1.7c-0.6-0.5-1.1-1.1-1.5-1.8c-0.4-0.7-0.5-1.5-0.5-2.5c0-1.8,0.6-3.2,1.8-4.2
+                    		c1.2-1,2.9-1.5,5-1.5c1,0,2,0.1,3,0.4s1.9,0.6,3,1l-1.4,3.3c-1.1-0.4-1.9-0.7-2.6-0.9c-0.7-0.2-1.4-0.3-2.1-0.3
+                    		c-0.8,0-1.4,0.2-1.8,0.6c-0.4,0.4-0.6,0.9-0.6,1.5c0,0.4,0.1,0.7,0.3,1c0.2,0.3,0.4,0.5,0.8,0.8c0.4,0.3,1.3,0.7,2.7,1.4
+                    		c1.9,0.9,3.1,1.8,3.8,2.7C85.2,72.9,85.6,74,85.6,75.3z"/>
+                    </g>
+                  </svg>
+                </div>
+                <div id="icon2">
+                  HTML & CSS
+                  <svg viewBox="0 0 141.7 141.7" enable-background="new 0 0 141.7 141.7" xml:space="preserve">
+                    <circle cx="70.9" cy="70.9" r="38" stroke="#03CC85" stroke-width="5" fill="#eeeeee"stroke-dasharray="50, 100" />
+                    <circle fill="#FFFFFF" cx="70.9" cy="70.9" r="35.4"/>
+                    <g>
+                      <path fill="#03CC85" d="M63.9,78.1l-13.6-6v-2l13.6-6.8v3.3L54.5,71l9.4,3.8V78.1z"/>
+                      <path fill="#03CC85" d="M76.5,60.9l-7.5,20h-3.8l7.5-20H76.5z"/>
+                      <path fill="#03CC85" d="M77.9,74.8l9.4-3.8l-9.4-4.3v-3.3l13.6,6.8v2l-13.6,6V74.8z"/>
+                    </g>
+                  </svg>
+                </div>
+                <div id="icon3">
+                  Adobe Illustrator
+                  <svg viewBox="0 0 141.7 141.7" enable-background="new 0 0 141.7 141.7" xml:space="preserve">
+                    <circle cx="70.9" cy="70.9" r="38" stroke="#03CC85" stroke-width="5" fill="#eeeeee"stroke-dasharray="100, 100" />
+                    <circle fill="#FFFFFF" cx="70.9" cy="70.9" r="35.4"/>
+                    <g>
+                      <path fill="#03CC85" d="M72.6,80.9l-1.4-4.8h-7.3l-1.4,4.8h-4.6l7.1-20.1h5.2l7.1,20.1H72.6z M70.1,72.6c-1.3-4.3-2.1-6.7-2.3-7.3
+                        c-0.2-0.6-0.3-1-0.4-1.3c-0.3,1.2-1.2,4.1-2.6,8.7H70.1z"/>
+                      <path fill="#03CC85" d="M79.7,80.9v-20h4.2v20H79.7z"/>
+                    </g>
+                  </svg>
+              </div>
+-->
+      <!--      </section> -->
+            <section id="cv">
+     <section id="jobs">
+          <h1>Jobs</h1>
+          <!-- 1. Jobeintrag -->
+          <div class="cv-eintrag">
+            <div class="links">
+                <img src="./img/cv/aktenkoffer.svg" height="50px" />
+                <p class="jahr">seit 2017</p>
+              </div>
+              <div class="rechts">
+              <p class="cv-beschreibung">
+              <span class="cv-titel">Interactive Media Designer bei SFGB-B</span>
+              <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+        </div>
+        <!-- 2. Jobeintrag -->
+        <div class="cv-eintrag">
+            <div class="links">
+                <img src="./img/cv/aktenkoffer.svg" height="50px" />
+                <p class="jahr">2011-2012</p>
+              </div>
+              <div class="rechts">
+              <p class="cv-beschreibung">
+              <span class="cv-titel">Gestalterischer Vorkus SFGB-B</span>
+              <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+        </div>
+        </section>
+        <section id="ausbildungen">
+          <h1>Ausbildung</h1>
+          <!-- 1. Ausbildungseintrag -->
+          <div class="cv-eintrag">
+            <div class="links">
+                <img src="./img/cv/zertifikat.svg" height="50px" />
+                <p class="jahr">2016-2018</p>
+              </div>
+              <div class="rechts">
+              <p class="cv-beschreibung">
+              <span class="cv-titel">Berufslehre Interactive Media Designer</span>
+              <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+        </div>
+        <!-- 2. Ausbilungseintrag -->
+        <div class="cv-eintrag">
+            <div class="links">
+                <img src="./img/cv/zertifikat.svg" height="50px" />
+                <p class="jahr">2011-2016</p>
+              </div>
+              <div class="rechts">
+              <p class="cv-beschreibung">
+              <span class="cv-titel">Sekundarschule Bern</span>
+              <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+        </div>
+      </section>
+  <!-- Sektion Portfolio -->
+
+<section id="portfolio">
+  <h1>Portfolio</h1>
+  <!-- erster Portfolio Eintrag -->
+  <div class="portfolio-eintrag">
+     <a href="arbeit1.html"><img src="./img/portfolio/thumbs/thumb_arbeit_1.jpg" title="Arbeit 1">
+       <div class="arbeit-titel">
+       <p>Arbeit</p>
+       </div>
+     </a>
+  </div>
+  </div>
+</section>
+
+<!-- Kontaktformular -->
+<section id="formular">
+<h1>Kontakt</h1>
+
+<div class="kontaktformular">
+
+  <form action="https://formspree.io/your@email.com" class="form-horizontal" role="form" method="post">
+    <input type="text" class="form-control" name="name" placeholder="Name" required>
+    <input type="email" class="form-control" name="_replyto" placeholder="Email" required>
+    <input type="text" class="form-control" name="_subject" placeholder="Betreff" required>
+    <textarea class="form-control" rows="5" name="message" placeholder="Mitteilung" required></textarea>
+    <button class="absenden" value="Submit Comment" type="submit">Absenden</button>
+  </form>
+
+</div>
+</section>
+    </div>
+    </main>
+    <footer>
+      <!-- Fussbereich für Sitemaps, Mailadressen, Sociallinks etc. -->
+      © Jonny Hipster 2017 &nbsp;|&nbsp; <a href="mailto:info@jonny-hipster.com">info@jonny-hipster.com</a>
+      <!-- &nbsp; erwzingt hier via Unicode ein zusätzliches Leerzeichen. Gleich mehr dazu. -->
+    </footer>
+    <!--Scripts einbinden-->
+
+  </body>
+</html>
